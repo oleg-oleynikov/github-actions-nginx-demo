@@ -9,5 +9,10 @@ services:
     - ./config/config.yml
   restart:
     always
+  
+  nginx: 
+    image: nginx:latest
+    ports: 
+      - "80:80"
     
   
